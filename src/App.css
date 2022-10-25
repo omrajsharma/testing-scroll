@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body{
+  background-color: #212121;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.app-content{
+  width: 50%;
+}
+
+.app-phone {
+  width: 50%;
+}
+
+.app-content{
+  margin-top: 300px;
+}
+.app-content div{
+  min-height: 500px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.phone-container{
+  position: fixed;
+  top: 200px;
+  width: 272px;
+  height: 480px;
+  border: 1px solid black;
+  margin: 10px;
+  box-shadow: rgb(250 250 255 / 16%) 0px -5px 6px 0px inset, rgb(38 37 37 / 24%) 4px 6px 11px 1px inset;
+  border-radius: 46px;
+  padding: 16px 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display-off{
+  color: #212121 !important;
+}
+
+.phone-image-container{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
